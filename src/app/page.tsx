@@ -1,12 +1,75 @@
-import Link from "next/link";
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <div>
-      <header>
-        
+    <div className="p-0">
+      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-between items-center">
+        <div className="flex flex-row m-5  items-center">
+          <img src="codigo.png" alt="logo" className="w-16 mr-3 ml-5" />
+          <p className="p-1 text-3xl font-bold">Guilherme Dias</p>
+        </div>
+        <nav className="p-1 m-5">
+          <ul className="flex flex-row gap-8 text-xl font-bold mr-5">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About Me</a>
+            </li>
+            <li>
+              <a href="">Skills</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
+      <section className="flex bg-cyan-700 text-white w-1/1 h-screen flex-row justify-around">
+        <div className="flex flex-col p-24 w-1/2 justify-center">
+          <h1 className="text-5xl font-bold mb-10 font-sans">
+            Olá! Me chamo Guilherme
+          </h1>
+          <h2 className="text-3xl font-bold mb-2 font-sans">
+            Desenvolvedor Back-End
+          </h2>
+          <p className="text-2xl font-sans">
+            Sou uma pessoa dedicada e com sede de conhecimento, buscando sempre
+            aprender algo novo.
+          </p>
+          <div className="mt-8">
+            <button className="border p-4 pl-10 pr-10 bg-stone-500 shadow-md shadow-zinc-300/100 rounded-3xl">
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <img src="avatar.png" alt="" className="w-90 " />
+        </div>
+      </section>
+      <section className="flex bg-zinc-700 w-1/1 h-screen text-white justify-center">
+        <div className="border w-1/2">
+          <div className="flex justify-center text-4xl">
+            <h1>About Me</h1>
+          </div>
+          <div className="flex p-16 items-center flex-col border">
+            <p>
+              Desenvolvedor Back-End formado em Análise e Desenvolvimento de
+              Sistemas pela FIAP. Atualmente, estou focado em aprimorar minhas
+              habilidades, especialmente no desenvolvimento de APIs REST
+              integradas a bancos de dados, garantindo a manipulação de dados de
+              forma eficiente, escalável e segura.
+            </p>
+            <p>
+              Sou uma pessoa que está sempre em busca de desafios que me
+              impulsionem e me tornem um profissional melhor. Tenho muitos
+              sonhos e ambições, e penso constantemente no futuro, por isso, me
+              dedico a evoluir no presente para conquistar cada vez mais.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
