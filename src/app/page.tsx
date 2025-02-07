@@ -66,7 +66,7 @@ export default function Home() {
           {[
             { src: "java.svg", label: "Java" },
             { src: "Maven.svg", label: "Maven" },
-            { src: "spring.svg", label: "Spring" },
+            { src: "spring.svg", label: "SpringBoot" },
             { src: "rabbit.svg", label: "RabbitMQ" },
             { src: "DotNet.svg", label: ".NET" },
             { src: "aspnet.svg", label: "ASP.NET" },
@@ -91,7 +91,86 @@ export default function Home() {
       </section>
       <section className="flex bg-zinc-700 w-full min-h-screen text-white items-center flex-col font-sans">
         <h1 className="text-4xl p-20 font-bold">Projects</h1>
-        
+        <section className="flex justify-around mb-5">
+          <div className="flex flex-col gap-2 text-white w-1/3">
+            <h3 className="text-2xl font-bold">Título</h3>
+            <p className="text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              magni culpa nulla, molestias blanditiis, reiciendis placeat
+              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
+              facilis. Fugit autem error inventore.{" "}
+            </p>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Live Project
+            </a>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Repository
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
+              <div>
+                <img src="agricultu-img-pc.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section className="flex flex-row-reverse justify-around ">
+          <div className="flex flex-col gap-2 text-white w-1/3">
+            <h3 className="text-2xl font-bold">Título</h3>
+            <p className="text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              magni culpa nulla, molestias blanditiis, reiciendis placeat
+              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
+              facilis. Fugit autem error inventore.
+            </p>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Live Project
+            </a>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Repository
+            </a>
+          </div>
+
+          <div>
+            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
+              <div>
+                <img src="agricultu-img-pc.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section className="flex justify-around mb-5">
+          <div className="flex flex-col gap-2 text-white w-1/3">
+            <h3 className="text-2xl font-bold">Título</h3>
+            <p className="text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              magni culpa nulla, molestias blanditiis, reiciendis placeat
+              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
+              facilis. Fugit autem error inventore.{" "}
+            </p>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Live Project
+            </a>
+            <a href="#" className="text-lg font-bold text-white underline">
+              Repository
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
+              <div>
+                <img src="agricultu-img-pc.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      {/* Futter */}
+      <section className="flex flex-col items-center justify-center h-1/2 bg-black text-white p-6">
+          
       </section>
     </div>
   );
