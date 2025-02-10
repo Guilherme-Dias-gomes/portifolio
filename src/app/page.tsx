@@ -222,7 +222,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col sm:flex-row justify-center sm:justify-around mb-7 gap-6">
+        <section className="flex flex-col sm:flex-row-reverse justify-center sm:justify-around mb-7 gap-6">
           <div className="flex flex-col gap-2 text-white w-full sm:w-1/3">
             <h3 className="text-xl sm:text-2xl font-bold">Título</h3>
             <p className="text-gray-300">
