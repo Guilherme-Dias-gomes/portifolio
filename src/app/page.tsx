@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="p-0">
-      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-between items-center p-5">
+      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-between items-center p-5 z-10">
         <div className="flex flex-row items-center">
           <img src="codigo.png" alt="logo" className="w-16 mr-3" />
           <p className="p-1 text-3xl font-bold">Guilherme Dias</p>
@@ -45,31 +45,18 @@ export default function Home() {
           } lg:block lg:relative absolute top-full left-0 w-full bg-stone-800 lg:bg-transparent lg:w-auto lg:top-0`}
         >
           <ul className="flex flex-col lg:flex-row gap-8 text-xl font-bold p-5 lg:p-0">
-            <li>
-              <a href="#home" className="block py-2 lg:py-0">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="block py-2 lg:py-0">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className="block py-2 lg:py-0">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="block py-2 lg:py-0">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="block py-2 lg:py-0">
-                Contact
-              </a>
-            </li>
+            {["home", "about", "skills", "projects", "contact"].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item}`}
+                  className="block py-2 lg:py-0 relative transition duration-300 hover:text-blue-500 
+                   before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] 
+                   before:bg-blue-500 before:transition-all before:duration-300 hover:before:w-full"
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>
