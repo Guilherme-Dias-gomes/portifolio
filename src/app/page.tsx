@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Project from "./components/Projects";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -195,86 +197,61 @@ export default function Home() {
         className="flex bg-zinc-700 w-full min-h-screen text-white items-center flex-col font-sans"
       >
         <h1 className="text-4xl p-20 font-bold">Projects</h1>
-        <section className="flex flex-col sm:flex-row justify-center sm:justify-around mb-7 gap-6">
-          <div className="flex flex-col gap-2 text-white w-full sm:w-1/3">
-            <h3 className="text-xl sm:text-2xl font-bold">Título</h3>
-            <p className="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magni culpa nulla, molestias blanditiis, reiciendis placeat
-              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
-              facilis. Fugit autem error inventore.
-            </p>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Live Project
-            </a>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Repository
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
-              <img
-                src="agricultu-img-pc.png"
-                alt="Project Image"
-                className="w-full sm:w-96"
-              />
-            </a>
-          </div>
-        </section>
-
-        <section className="flex flex-col sm:flex-row-reverse justify-center sm:justify-around mb-7 gap-6">
-          <div className="flex flex-col gap-2 text-white w-full sm:w-1/3">
-            <h3 className="text-xl sm:text-2xl font-bold">Título</h3>
-            <p className="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magni culpa nulla, molestias blanditiis, reiciendis placeat
-              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
-              facilis. Fugit autem error inventore.
-            </p>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Live Project
-            </a>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Repository
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
-              <img
-                src="agricultu-img-pc.png"
-                alt="Project Image"
-                className="w-full sm:w-96"
-              />
-            </a>
-          </div>
-        </section>
-
-        <section className="flex flex-col sm:flex-row justify-center sm:justify-around mb-7 gap-6">
-          <div className="flex flex-col gap-2 text-white w-full sm:w-1/3">
-            <h3 className="text-xl sm:text-2xl font-bold">Título</h3>
-            <p className="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magni culpa nulla, molestias blanditiis, reiciendis placeat
-              voluptate cupiditate aut debitis hic, ex cumque nemo doloremque
-              facilis. Fugit autem error inventore.
-            </p>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Live Project
-            </a>
-            <a href="#" className="text-lg font-bold text-white underline">
-              Repository
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/Guilherme-Dias-gomes/portifolio">
-              <img
-                src="agricultu-img-pc.png"
-                alt="Project Image"
-                className="w-full sm:w-96"
-              />
-            </a>
-          </div>
-        </section>
+        <Projects
+          titulo="Portal da Clínica de Estética"
+          content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
+              experiência intuitiva e prática para os clientes, permitindo o
+              agendamento de consultas, a visualização de detalhes sobre
+              procedimentos estéticos e o acesso a informações sobre a clínica e
+              a doutora responsável. A interface moderna e responsiva foi
+              construída utilizando Next.js com TypeScript e Tailwind CSS,
+              garantindo alta performance, escalabilidade e uma experiência
+              agradável em diferentes dispositivos. O sistema conta com uma
+              navegação fluida e otimizada para SEO, permitindo que clientes
+              encontrem rapidamente os serviços oferecidos e agendem suas
+              consultas de maneira simples e eficaz."
+          link1="https://github.com/Guilherme-Dias-gomes/clinica"
+          link2="https://github.com/Guilherme-Dias-gomes/clinica"
+          link3="https://github.com/Guilherme-Dias-gomes/clinica"
+          image="clinica.png"
+        />
+        <Projects
+          titulo="Portal da Clínica de Estética"
+          reverse={true}
+          content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
+              experiência intuitiva e prática para os clientes, permitindo o
+              agendamento de consultas, a visualização de detalhes sobre
+              procedimentos estéticos e o acesso a informações sobre a clínica e
+              a doutora responsável. A interface moderna e responsiva foi
+              construída utilizando Next.js com TypeScript e Tailwind CSS,
+              garantindo alta performance, escalabilidade e uma experiência
+              agradável em diferentes dispositivos. O sistema conta com uma
+              navegação fluida e otimizada para SEO, permitindo que clientes
+              encontrem rapidamente os serviços oferecidos e agendem suas
+              consultas de maneira simples e eficaz."
+          link1="https://github.com/Guilherme-Dias-gomes/clinica"
+          link2="https://github.com/Guilherme-Dias-gomes/clinica"
+          link3="https://github.com/Guilherme-Dias-gomes/clinica"
+          image="clinica.png"
+        />
+        <Projects
+          titulo="Portal da Clínica de Estética"
+          content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
+              experiência intuitiva e prática para os clientes, permitindo o
+              agendamento de consultas, a visualização de detalhes sobre
+              procedimentos estéticos e o acesso a informações sobre a clínica e
+              a doutora responsável. A interface moderna e responsiva foi
+              construída utilizando Next.js com TypeScript e Tailwind CSS,
+              garantindo alta performance, escalabilidade e uma experiência
+              agradável em diferentes dispositivos. O sistema conta com uma
+              navegação fluida e otimizada para SEO, permitindo que clientes
+              encontrem rapidamente os serviços oferecidos e agendem suas
+              consultas de maneira simples e eficaz."
+          link1="https://github.com/Guilherme-Dias-gomes/clinica"
+          link2="https://github.com/Guilherme-Dias-gomes/clinica"
+          link3="https://github.com/Guilherme-Dias-gomes/clinica"
+          image="clinica.png"
+        />
       </section>
 
       {/* Futter */}
