@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Project from "./components/Projects";
 import Projects from "./components/Projects";
 
 export default function Home() {
