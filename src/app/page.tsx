@@ -209,9 +209,9 @@ export default function Home() {
               navegação fluida e otimizada para SEO, permitindo que clientes
               encontrem rapidamente os serviços oferecidos e agendem suas
               consultas de maneira simples e eficaz."
-          link1="https://github.com/Guilherme-Dias-gomes/clinica"
+          link1="https://clinica-dra-rosiane-gomes.netlify.app/"
           link2="https://github.com/Guilherme-Dias-gomes/clinica"
-          link3="https://github.com/Guilherme-Dias-gomes/clinica"
+          link3="https://clinica-dra-rosiane-gomes.netlify.app/"
           image="clinica.png"
         />
         <Projects
