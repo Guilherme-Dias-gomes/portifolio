@@ -63,7 +63,7 @@ export default function Home() {
       </header>
       <section
         id="home"
-        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-screen justify-center items-center sm:justify-around font-sans p-6"
+        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-full justify-center items-center sm:justify-around font-sans p-6"
       >
         <div className="flex flex-col items-center sm:items-start sm:w-1/2 justify-center text-center sm:text-left p-6">
           <h1 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="flex bg-zinc-700 w-full min-h-screen text-white items-center flex-col font-sans"
+        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
       >
         <h1 className="text-4xl p-20 font-bold">About Me</h1>
         <p className="w-3/4 text-3xl mb-10 text-center">
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
       <section
         id="skills"
-        className="flex flex-col bg-zinc-700 w-full min-h-screen text-white items-center font-sans p-6"
+        className="flex flex-col bg-zinc-700 w-full min-h-full text-white items-center font-sans p-6"
       >
         <h1 className="text-3xl sm:text-4xl font-bold mb-10">Technologies</h1>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full sm:w-3/4">
@@ -193,9 +193,9 @@ export default function Home() {
       </section>
       <section
         id="projects"
-        className="flex bg-zinc-700 w-full min-h-screen text-white items-center flex-col font-sans"
+        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
       >
-        <h1 className="text-4xl p-20 font-bold">Projects</h1>
+        <h1 className="text-4xl font-bold">Projects</h1>
         <Projects
           titulo="Portal da Clínica de Estética"
           content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
@@ -306,7 +306,7 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <h1 className="mt-10">
+        <h1 className="mt-10 w-full">
           © Guilherme Dias 2025 - Todos os direitos reservados.
         </h1>
       </section>
