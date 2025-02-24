@@ -18,16 +18,19 @@ export default function Projects({
   reverse,
 }: ProjectProps) {
   return (
-    <section className={`flex flex-col sm:flex-row gap-6 p-10 ${reverse ? 'sm:flex-row-reverse' : ''}`}>
-      <div className="flex flex-col gap-2 text-white w-full sm:w-1/2 justify-center">
-        <h3 className="text-xl sm:text-3xl font-bold">{titulo}</h3>
+    <section
+      className={`flex flex-col sm:flex-row gap-10 p-10 w-full ${reverse ? 'sm:flex-row-reverse' : ''}`}
+    >
+      {/* Texto */}
+      <div className="flex flex-col gap-4 text-white w-full sm:w-1/2 justify-center">
+        <h3 className="text-2xl sm:text-3xl font-bold">{titulo}</h3>
         <p className="text-gray-300">{content}</p>
         {link1 && (
           <a
             href={link1}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200 w-1/6"
+            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200"
           >
             Live Project
           </a>
@@ -37,26 +40,28 @@ export default function Projects({
             href={link2}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200 w-1/5"
+            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200"
           >
             Repository
           </a>
         )}
       </div>
-      <div className="w-1/2">
+
+      {/* Imagem */}
+      <div className="w-full sm:w-1/2 flex justify-center">
         {link3 ? (
           <a href={link3} target="_blank" rel="noopener noreferrer">
             <img
               src={image}
               alt={`Imagem do projeto ${titulo}`}
-              className="sm:w-full shadow-xl shadow-black rounded-lg hover:scale-105 transition-transform duration-200"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-xl shadow-black rounded-lg hover:scale-105 transition-transform duration-200"
             />
           </a>
         ) : (
           <img
             src={image}
             alt={`Imagem do projeto ${titulo}`}
-            className="sm:w-full shadow-xl shadow-black rounded-lg"
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-xl shadow-black rounded-lg"
           />
         )}
       </div>
