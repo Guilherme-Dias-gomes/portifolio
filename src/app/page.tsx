@@ -215,41 +215,21 @@ export default function Home() {
           image="clinica.png"
         />
         <Projects
-          titulo="Portal da Clínica de Estética"
+          titulo="EM BREVE"
           reverse={true}
-          content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
-              experiência intuitiva e prática para os clientes, permitindo o
-              agendamento de consultas, a visualização de detalhes sobre
-              procedimentos estéticos e o acesso a informações sobre a clínica e
-              a doutora responsável. A interface moderna e responsiva foi
-              construída utilizando Next.js com TypeScript e Tailwind CSS,
-              garantindo alta performance, escalabilidade e uma experiência
-              agradável em diferentes dispositivos. O sistema conta com uma
-              navegação fluida e otimizada para SEO, permitindo que clientes
-              encontrem rapidamente os serviços oferecidos e agendem suas
-              consultas de maneira simples e eficaz."
-          link1="https://github.com/Guilherme-Dias-gomes/clinica"
-          link2="https://github.com/Guilherme-Dias-gomes/clinica"
-          link3="https://github.com/Guilherme-Dias-gomes/clinica"
-          image="clinica.png"
+          content="Projeto em desenvolvimento..."
+          link1="https://github.com/Guilherme-Dias-gomes/portifolio"
+          link2="https://github.com/Guilherme-Dias-gomes/portifolio"
+          link3="https://github.com/Guilherme-Dias-gomes/portifolio"
+          image="metalico.png"
         />
         <Projects
-          titulo="Portal da Clínica de Estética"
-          content="O portal da Clínica de Estética foi desenvolvido para oferecer uma
-              experiência intuitiva e prática para os clientes, permitindo o
-              agendamento de consultas, a visualização de detalhes sobre
-              procedimentos estéticos e o acesso a informações sobre a clínica e
-              a doutora responsável. A interface moderna e responsiva foi
-              construída utilizando Next.js com TypeScript e Tailwind CSS,
-              garantindo alta performance, escalabilidade e uma experiência
-              agradável em diferentes dispositivos. O sistema conta com uma
-              navegação fluida e otimizada para SEO, permitindo que clientes
-              encontrem rapidamente os serviços oferecidos e agendem suas
-              consultas de maneira simples e eficaz."
-          link1="https://github.com/Guilherme-Dias-gomes/clinica"
-          link2="https://github.com/Guilherme-Dias-gomes/clinica"
-          link3="https://github.com/Guilherme-Dias-gomes/clinica"
-          image="clinica.png"
+          titulo="EM BREVE"
+          content="Projeto em desenvolvimento..."
+          link1="https://github.com/Guilherme-Dias-gomes/portifolio"
+          link2="https://github.com/Guilherme-Dias-gomes/portifolio"
+          link3="https://github.com/Guilherme-Dias-gomes/portifolio"
+          image="metalico.png"
         />
       </section>
 
