@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="p-0">
-      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-between items-center p-5 z-10">
+      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10">
         <div className="flex flex-row items-center">
           <img src="codigo.png" alt="logo" className="w-16 mr-3" />
           <p className="p-1 text-3xl font-bold">Guilherme Dias</p>
@@ -76,7 +76,7 @@ export default function Home() {
             Sou uma pessoa dedicada e com sede de conhecimento, buscando sempre
             aprender algo novo.
           </p>
-          <div>
+          <div className="hover:scale-90 transition-transform duration-200">
             <a
               href="Curriculo.pdf"
               download="Curriculo.pdf"
@@ -193,7 +193,7 @@ export default function Home() {
       </section>
       <section
         id="projects"
-        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
+        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans border-2 lg:px-24"
       >
         <h1 className="text-4xl font-bold">Projects</h1>
         <Projects
