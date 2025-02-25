@@ -1,17 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importe o CSS
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duração da animação
+      once: true, // Anima apenas uma vez
+    });
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div className="p-0">
+    <div className="p-0 bg-stone-800">
       <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10">
         <div className="flex flex-row items-center">
           <img src="codigo.png" alt="logo" className="w-16 mr-3" />
@@ -62,6 +71,7 @@ export default function Home() {
         </nav>
       </header>
       <section
+        data-aos="fade-up"
         id="home"
         className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-full justify-center items-center sm:justify-around font-sans p-6"
       >
@@ -91,6 +101,7 @@ export default function Home() {
         </div>
       </section>
       <section
+        data-aos="fade-up"
         id="about"
         className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
       >
@@ -110,6 +121,7 @@ export default function Home() {
         </p>
       </section>
       <section
+        data-aos="fade-up"
         id="skills"
         className="flex flex-col bg-zinc-700 w-full min-h-full text-white items-center font-sans p-6"
       >
@@ -192,6 +204,7 @@ export default function Home() {
         </div>
       </section>
       <section
+        data-aos="fade-up"
         id="projects"
         className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans lg:px-24"
       >
@@ -235,6 +248,7 @@ export default function Home() {
 
       {/* Futter */}
       <section
+        data-aos="fade-up"
         id="contact"
         className="flex flex-col items-center justify-center bg-black text-white p-6"
       >
