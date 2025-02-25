@@ -193,7 +193,7 @@ export default function Home() {
       </section>
       <section
         id="projects"
-        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans border-2 lg:px-24"
+        className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans lg:px-24"
       >
         <h1 className="text-4xl font-bold">Projects</h1>
         <Projects
