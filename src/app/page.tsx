@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'; // Importe o CSS
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -19,12 +20,23 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="p-0 bg-stone-800">
-      <header className="sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10">
+      <header className={`sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10 ${
+        scrolled ? "border-b border-white" : ""
+      }`}
+      >
         <div className="flex flex-row items-center">
-          <img src="codigo.png" alt="logo" className="w-16 mr-3" />
-          <p className="p-1 text-3xl font-bold">Guilherme Dias</p>
+          <img src="logo.png" alt="logo" className="w-24 mr-3" />
         </div>
 
         {/* Botão de hamburguer para telas pequenas */}

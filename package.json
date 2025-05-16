@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack cross-env PORT=3003",
+    "dev": "cross-env PORT=3003 next dev --turbopack",
     "build": "next build",
     "start": "cross-env PORT=3003 next start",
     "lint": "next lint"
@@ -12,6 +12,7 @@
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
+    "cross-env": "^7.0.3",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
