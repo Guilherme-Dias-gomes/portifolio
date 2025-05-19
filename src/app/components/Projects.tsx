@@ -30,7 +30,7 @@ export default function Projects({
             href={link1}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200"
+            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200 w-1/6"
           >
             Live Project
           </a>
@@ -40,7 +40,7 @@ export default function Projects({
             href={link2}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200"
+            className="text-lg font-bold text-white underline hover:scale-90 transition-transform duration-200 w-1/6"
           >
             Repository
           </a>

@@ -13,9 +13,13 @@
     "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "cross-env": "^7.0.3",
+    "gsap": "^3.13.0",
+    "motion": "^12.12.1",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-typed": "^2.0.12",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

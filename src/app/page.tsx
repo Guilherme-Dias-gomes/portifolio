@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Importe o CSS
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ReactTyped } from "react-typed";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +32,10 @@ export default function Home() {
 
   return (
     <div className="p-0 bg-stone-800">
-      <header className={`sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10 ${
-        scrolled ? "border-b border-white" : ""
-      }`}
+      <header
+        className={`sticky top-0 flex flex-row bg-stone-800 text-white justify-around items-center p-5 z-10 ${
+          scrolled ? "border-b border-white" : ""
+        }`}
       >
         <div className="flex flex-row items-center">
           <img src="logo.png" alt="logo" className="w-24 mr-3" />
@@ -85,27 +87,69 @@ export default function Home() {
       <section
         data-aos="fade-up"
         id="home"
-        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-full justify-center items-center sm:justify-around font-sans p-6"
+        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-screen justify-center items-center sm:justify-around font-sans p-6"
       >
-        <div className="flex flex-col items-center sm:items-start sm:w-1/2 justify-center text-center sm:text-left p-6">
-          <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-            Olá! Me chamo Guilherme
+        <div className="flex flex-col items-center sm:items-start sm:w-1/2 justify-center text-center sm:text-left gap-8 h-full">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-stone-50 bg-clip-text text-transparent animate-bounce">
+            <ReactTyped
+              className="bg-gradient-to-r from-blue-500 via-cyan-300
+                   bg-[length:200%_200%] bg-clip-text text-transparent
+                   animate-gradient-text"
+              strings={["Guilherme Dias Gomes"]}
+            />
           </h1>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-            Desenvolvedor Back-End
-          </h2>
-          <p className="text-xl sm:text-2xl mb-6">
-            Sou uma pessoa dedicada e com sede de conhecimento, buscando sempre
-            aprender algo novo.
-          </p>
-          <div className="hover:scale-90 transition-transform duration-200">
-            <a
-              href="Curriculo.pdf"
-              download="Curriculo.pdf"
-              className="border p-3 sm:p-4 px-8 bg-stone-500 shadow-md rounded-3xl"
-            >
-              Download CV
-            </a>
+          <ReactTyped
+            className="text-xl sm:text-3xl"
+            strings={[
+              "Desenvolvendo soluções através de codigo e criatividade.",
+            ]}
+          />
+
+          <div className="w-full md:w-2/3 lg:w-1/2 h-fit rounded-xl border border-neutral-700 bg-white/10 backdrop-blur-md shadow-lg shadow-black/30 p-6 transition-all duration-300">
+            {/* Ícones sociais */}
+            <div className="flex justify-around items-center mb-6">
+              <a
+                href="https://www.linkedin.com/in/guilherme-dias-gomes/"
+                className="w-10 hover:scale-110 transition-transform"
+              >
+                <img src="linkedin.svg" alt="LinkedIn" />
+              </a>
+              <a
+                href="mailto:guilhermediasgomes2@gmail.com"
+                className="w-10 hover:scale-110 transition-transform"
+              >
+                <img src="email.svg" alt="Email" />
+              </a>
+              <a
+                href="tel:5511977871357"
+                className="w-10 hover:scale-110 transition-transform"
+              >
+                <img src="whats.svg" alt="WhatsApp" />
+              </a>
+              <a
+                href="https://github.com/Guilherme-Dias-gomes"
+                className="w-10 hover:scale-110 transition-transform"
+              >
+                <img src="github.svg" alt="GitHub" />
+              </a>
+            </div>
+
+            {/* Botões */}
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <a
+                href="mailto:guilhermediasgomes2@gmail.com"
+                className="bg-gradient-to-r from-zinc-800 to-stone-700 text-white px-6 py-3 rounded-lg border border-black shadow-md hover:brightness-110 transition-all"
+              >
+                Entrar em contato
+              </a>
+              <a
+                href="Curriculo.pdf"
+                download="Curriculo.pdf"
+                className="bg-transparent text-black px-6 py-3 rounded-lg border border-black hover:bg-black hover:text-white transition-all"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex justify-center sm:justify-end mt-8 sm:mt-0">
@@ -117,7 +161,14 @@ export default function Home() {
         id="about"
         className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
       >
-        <h1 className="text-4xl p-20 font-bold">About Me</h1>
+        <h1 className="text-4xl p-20 font-bold">
+          <span className="text-blue-500">&lt; </span>
+          About Me
+          <span className="text-blue-500"> /&gt;</span>
+          <span>
+            <ReactTyped strings={["_"]}></ReactTyped>
+          </span>
+        </h1>
         <p className="w-3/4 text-3xl mb-10 text-center">
           Desenvolvedor Back-End formado em Análise e Desenvolvimento de
           Sistemas pela FIAP. Atualmente, estou focado em aprimorar minhas
