@@ -12,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duração da animação
-      once: true, // Anima apenas uma vez
+      duration: 1000, 
+      once: true,
     });
   }, []);
 
@@ -87,7 +87,7 @@ export default function Home() {
       <section
         data-aos="fade-up"
         id="home"
-        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-screen justify-center items-center sm:justify-around font-sans p-6"
+        className="flex flex-col sm:flex-row bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-700 text-white w-full h-full justify-center items-center sm:justify-around font-sans p-6"
       >
         <div className="flex flex-col items-center sm:items-start sm:w-1/2 justify-center text-center sm:text-left gap-8 h-full">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-stone-50 bg-clip-text text-transparent animate-bounce">
@@ -103,10 +103,12 @@ export default function Home() {
             strings={[
               "Desenvolvendo soluções através de codigo e criatividade.",
             ]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
           />
 
           <div className="w-full md:w-2/3 lg:w-1/2 h-fit rounded-xl border border-neutral-700 bg-white/10 backdrop-blur-md shadow-lg shadow-black/30 p-6 transition-all duration-300">
-            {/* Ícones sociais */}
             <div className="flex justify-around items-center mb-6">
               <a
                 href="https://www.linkedin.com/in/guilherme-dias-gomes/"
@@ -135,7 +137,7 @@ export default function Home() {
             </div>
 
             {/* Botões */}
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col md:flex-row gap-2 justify-center items-center">
               <a
                 href="mailto:guilhermediasgomes2@gmail.com"
                 className="bg-gradient-to-r from-zinc-800 to-stone-700 text-white px-6 py-3 rounded-lg border border-black shadow-md hover:brightness-110 transition-all"
@@ -161,7 +163,7 @@ export default function Home() {
         id="about"
         className="flex bg-zinc-700 w-full min-h-full text-white items-center flex-col font-sans"
       >
-        <h1 className="text-4xl p-20 font-bold">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl p-10 sm:p-14 md:p-20 font-bold">
           <span className="text-blue-500">&lt; </span>
           About Me
           <span className="text-blue-500"> /&gt;</span>
